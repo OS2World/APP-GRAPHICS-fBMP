@@ -1,0 +1,41 @@
+fBMP version 0.97
+
+This is a simple program that displays 256-color Win3 bitmaps in a PM window.
+It uses the palette manager and probably won't work too well on systems that
+don't have the palette manager (i.e., anything below OS/2 2.0 with CSD 6055).
+It has been tested on ET4000 and XGA systems and works well with them.
+
+This program is *not* really intended for end-users (though it should be
+okay for them). Rather, I tried to write something that PM programmers could
+build upon to make better viewers.
+
+(Why does it view Win3 bitmaps and not OS/2 bitmaps? It was easier for
+me to get the docs for the Win3 format and sample Win3 bitmaps. If someone
+modifies the program to read OS/2 bitmaps, I'd like to hear from them.)
+
+The "syntax" for invoking fBMP is
+
+   FBMP filename
+
+The filename is required and must specify a Win3 bitmap file. You need not
+include the .BMP extension.
+
+If something goes wrong, the program will beep and return you to the OS/2
+prompt. Specifically:
+
+1 beep: File cannot be opened (or you didn't specify a file).
+2 beeps: File is not a Win3 bitmap.
+3 beeps: Cannot allocate enough memory space to read bitmap file. (I haven't
+   seen this happen yet -- ain't virtual memory great?)
+
+Again, this is *not* intended to be an efficient or fast BMP viewer;
+only one that can be easily understood and improved. I'd appreciate
+hearing from anyone who makes improvements. You can contact me at
+sthiagar@bronze.ucs.indiana.edu on the internet, or 72175,12 on
+compuserve. Note that I read my internet mail almost every day, but
+only check into compuserve about once a week. Thanks to Peter Nielsen
+(pnielsen@aton.abo.fi) for some clever ideas and significant
+improvements he made to this program.
+
+Raja Thiagarajan
+(sthiagar@bronze.ucs.indiana.edu)

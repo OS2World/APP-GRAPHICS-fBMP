@@ -1,0 +1,6 @@
+NAME    fBMP WINDOWAPI
+
+DESCRIPTION 'Display 256-color Win3 bitmap in a window'
+
+PROTMODE
+STACKSIZE       65536
